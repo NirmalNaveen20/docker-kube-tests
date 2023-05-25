@@ -19,8 +19,4 @@ For modern DevOps but also for local development - on your own or in a team - th
 
 
 
-![App Screenshot](https://public-images-view.s3.amazonaws.com/logo-docker.gif )
-
-![App Screenshot](https://public-images-view.s3.amazonaws.com/logo-kubernetes.gif)
-
 
