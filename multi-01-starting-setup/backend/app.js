@@ -84,7 +84,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 mongoose.connect(
-  'mongodb://mongodb:27017/course-goals', //give container name if mongo container in the network
+  'mongodb://nirmal:secret@mongodb:27017/course-goals?authSource=admin', //give container name if mongo container in the network
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
