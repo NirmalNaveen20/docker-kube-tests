@@ -68,7 +68,7 @@ app.get("/people", async (req, res) => {
 });
 
 mongoose.connect(
-  "mongodb://mongodb-app:27017/swfavorites",
+  "mongodb://mongodb-app:27017/swfavorites", //host.docker.internal
   { useNewUrlParser: true, useUnifiedTopology: true }, // Add the useUnifiedTopology option
   (err) => {
     if (err) {
