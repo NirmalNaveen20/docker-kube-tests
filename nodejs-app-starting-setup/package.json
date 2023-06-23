@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "author": "Maximilian Schwarzmüller / Academind GmbH",
+  "author": "Nirmal Naveen",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
