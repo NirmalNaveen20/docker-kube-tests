@@ -11,11 +11,6 @@ With Docker, you create and manage so-called "Containers" - basically packages o
 For modern DevOps but also for local development - on your own or in a team - this is a winner feature since you will no longer have any "but it worked on my machine" discussions. It works inside of a container, hence it works everywhere!
 
 
-## Instructors
-
-- [Academind by Maximilian Schwarzmüller](https://www.udemy.com/user/academind/)
-
-- [Maximilian Schwarzmüller](https://www.udemy.com/user/maximilian-schwarzmuller/)
 
 
 
