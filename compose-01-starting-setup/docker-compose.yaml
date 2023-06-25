@@ -1,0 +1,40 @@
+version: "3.8"
+services:
+  mongodb:
+    image: 'mongo'
+    volumes:
+      - data:/data/db
+    # environment:
+      # MONGO_INITDB_ROOT_USERNAME: nirmal
+      # MONGO_INITDB_ROOT_PASSWORD: secret   //with key value pair you don't need -
+      # - MONGO_INITDB_ROOT_USERNAME=nirmal
+    env_file:
+      - ./env/mongo.env
+      
+  backend:
+    build: ./backend #Path to Dockerfile
+    ports:
+      - '80:80'
+    volumes:
+      - logs:/app/logs
+      - ./backend:/app
+      - /app/node_modules
+    env_file:
+      - ./env/backend.env
+    depends_on:
+      - mongodb 
+
+  frontend:
+    build: ./frontend
+    ports:
+      - '3000:3000'
+    volumes:
+      - ./frontend/src:/app/src
+    stdin_open: true 
+    tty: true 
+    depends_on:
+      - backend
+   
+volumes:
+  data:
+  logs:

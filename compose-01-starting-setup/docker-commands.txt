@@ -28,10 +28,10 @@ Run Node API Container
 ---------------------
 
 docker run --name goals-backend \
-  -e MONGODB_USERNAME=max \
+  -e MONGODB_USERNAME=nirmal \
   -e MONGODB_PASSWORD=secret \
   -v logs:/app/logs \
-  -v /Users/maximilianschwarzmuller/development/teaching/udemy/docker-complete/backend:/app \
+  -v /Users/nirmal/development/teaching/udemy/docker-complete/backend:/app \
   -v /app/node_modules \
   --rm \
   -d \
@@ -50,7 +50,7 @@ Run React SPA Container
 ---------------------
 
 docker run --name goals-frontend \
-  -v /Users/maximilianschwarzmuller/development/teaching/udemy/docker-complete/frontend/src:/app/src \
+  -v /Users/nirmal/development/teaching/udemy/docker-complete/frontend/src:/app/src \
   --rm \
   -d \
   -p 3000:3000 \
