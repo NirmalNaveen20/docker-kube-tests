@@ -1,1 +1,3 @@
 docker run -it -v /Users/nirmalnaveen/Documents/Projects/Docker-Projects/utility-containers:/app node-util npm init
+
+docker-compose run npm init
