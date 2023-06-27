@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  sever:
+    image: 'nginx:stable-alpine'
+    ports:
+      - '8000:80'
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+  # php:
+  # mysql: 
+  # composer:
+  # artisan:
+  # npm:
+  
