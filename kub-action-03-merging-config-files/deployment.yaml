@@ -9,11 +9,13 @@ spec:
       app: second-app
       tier: backend
   template:
-    metadata:
+    metadata: 
       labels:
         app: second-app
         tier: backend
-    spec:
+    spec: 
       containers:
-        - name: second-app
-          image: nirmalnaveen/first-kube-app:2
+        - name: second-node
+          image: academind/kub-first-app:2
+        # - name: ...
+        #   image: ...
